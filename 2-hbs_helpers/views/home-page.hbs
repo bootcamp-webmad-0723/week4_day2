@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reserva de curso | Ironhack España</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Reserva confirmada para {{name}}</h1>
+    <hr>
+    <p>{{name}}, tu reserva para el Bootcamp de {{{bootcamp}}} en {{campus}} está confirmada</p>
+
+    <hr>
+
+    {{#if teacher}}
+    <p>Tu profesor/a es {{teacher}}</p>
+    {{else}}
+    <p>Te será asignado un/a profesor/a en breves!</p>
+    {{/if}}
+
+    <hr>
+
+    {{#if debt}}
+    <p>Por favor, abona la cantidad pendiente de {{debt}} euros</p>
+    {{/if}}
+
+
+    <h3>Asignaturas de {{{bootcamp}}}</h3>
+
+    <ul>
+        {{#each subjects}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <hr>
+
+    {{#unless prework}}
+    <p>Termina el prework o morirás en semana uno</p>
+    {{/unless}}
+</body>
+
+</html>

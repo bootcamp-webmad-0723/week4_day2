@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <h1>Jugadores</h1>
+    <hr>
+    <div class="row">
+
+        {{#each players}}
+        <div class="col-md-4">
+
+            {{!-- <div class="card mb-3 player-card">
+                <img src="{{photo}}" class="card-img-top" alt="{{name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}} {{lastName}}</h5>
+                    <p>{{team}}</p>
+                </div>
+            </div> --}}
+
+            {{>playerCard}}
+
+        </div>
+
+        {{/each}}
+
+    </div>
+
+    <hr>
+    <a href="/" class="btn btn-dark mb-5">Ir a incio</a>
+</div>

@@ -1,0 +1,16 @@
+footer {
+    background-color: #212429;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: .6em;
+}
+
+.player-card img {
+    height: 150px;
+    object-fit: cover;
+}
